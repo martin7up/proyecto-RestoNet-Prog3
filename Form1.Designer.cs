@@ -1,20 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-namespace Resto_App
+using System.Collections.Generic;
+namespace borrador_RestoNet_Prog3
 {
     partial class Form1
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,91 +24,109 @@ namespace Resto_App
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelBlue = new System.Windows.Forms.Label();
-            this.labelGreen = new System.Windows.Forms.Label();
-            this.labelRed = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Location = new System.Drawing.Point(13, 13);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(533, 270);
-            this.panel1.TabIndex = 0;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(821, 426);
+            panel1.TabIndex = 1;
+            panel1.DragOver += panel1_DragOver;
             // 
-            // labelBlue
+            // panel2
             // 
-            this.labelBlue.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelBlue.Location = new System.Drawing.Point(553, 13);
-            this.labelBlue.Name = "labelBlue";
-            this.labelBlue.Size = new System.Drawing.Size(90, 54);
-            this.labelBlue.TabIndex = 1;
-            this.labelBlue.Click += new System.EventHandler(this.LabelBlue_Click);
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button4);
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button1);
+            panel2.Location = new Point(839, 12);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(85, 426);
+            panel2.TabIndex = 2;
             // 
-            // labelGreen
+            // button4
             // 
-            this.labelGreen.BackColor = System.Drawing.Color.Green;
-            this.labelGreen.Location = new System.Drawing.Point(659, 13);
-            this.labelGreen.Name = "labelGreen";
-            this.labelGreen.Size = new System.Drawing.Size(90, 54);
-            this.labelGreen.TabIndex = 2;
-            this.labelGreen.Click += new System.EventHandler(this.LabelGreen_Click);
+            button4.Location = new Point(5, 243);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 72);
+            button4.TabIndex = 3;
+            button4.Text = "Mesa p/ 5Personas";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button_Click;
             // 
-            // labelRed
+            // button3
             // 
-            this.labelRed.BackColor = System.Drawing.Color.Red;
-            this.labelRed.Location = new System.Drawing.Point(552, 81);
-            this.labelRed.Name = "labelRed";
-            this.labelRed.Size = new System.Drawing.Size(90, 54);
-            this.labelRed.TabIndex = 3;
-            this.labelRed.Click += new System.EventHandler(this.LabelRed_Click);
+            button3.Location = new Point(5, 165);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 72);
+            button3.TabIndex = 2;
+            button3.Text = "Mesa p/ 4Personas";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button_Click;
             // 
-            // label1
+            // button2
             // 
-            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(659, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 54);
-            this.label1.TabIndex = 4;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            button2.Location = new Point(5, 90);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 69);
+            button2.TabIndex = 1;
+            button2.Text = "Mesa p/ 3Personas";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(5, 17);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 70);
+            button1.TabIndex = 0;
+            button1.Text = "Mesa p/ 2Personas";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 320);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelRed);
-            this.Controls.Add(this.labelGreen);
-            this.Controls.Add(this.labelBlue);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(936, 450);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Name = "Form1";
+            Text = "Form1";
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelBlue;
-        private System.Windows.Forms.Label labelGreen;
-        private System.Windows.Forms.Label labelRed;
-        private Point dragStartPoint;
-        private Label draggedLabel;
-        private List<Label> labels = new List<Label>();
-        private Label label1;
+        private Panel panel1;
+        private bool botonIzqPresionado;
+        private Panel panel2;
+        private Button button4;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button nuevoComponente, aux;
+        private Point absPoint, relPoint;
     }
 }
-

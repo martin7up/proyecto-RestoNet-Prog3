@@ -18,3 +18,13 @@ E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.csproj.GenerateRes
 E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.csproj.CoreCompileInputs.cache
 E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.exe
 E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.pdb
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto App.csproj.AssemblyReference.cache
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\borrador_RestoNet_Prog3.Form1.resources
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto_App.Properties.Resources.resources
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto App.csproj.GenerateResource.cache
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto App.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto App.exe
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\obj\Debug\Resto App.pdb
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\bin\Debug\Resto App.exe.config
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\bin\Debug\Resto App.exe
+C:\Users\Pedro\source\repos\borrador_RestoNet_Prog3\bin\Debug\Resto App.pdb

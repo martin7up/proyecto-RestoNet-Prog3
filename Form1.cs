@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-
-namespace Resto_App
+using System.Collections.Generic;
+namespace borrador_RestoNet_Prog3
 {
     public partial class Form1 : Form
     {
@@ -11,75 +11,74 @@ namespace Resto_App
             InitializeComponent();
         }
 
-        private void LabelBlue_Click(object sender, EventArgs e)
+        private void button_MouseDown(object sender, MouseEventArgs e)
         {
-            CreateDraggableLabel(Color.MediumBlue);
+            botonIzqPresionado = true;
+            absPoint = e.Location;
+
+        }
+        private void button_MouseUp(object sender, MouseEventArgs e)
+        {
+            botonIzqPresionado = false;
+            (sender as Button).Location = panel1.PointToClient(Cursor.Position);
         }
 
-        private void LabelGreen_Click(object sender, EventArgs e)
+        private void button_KeyPress(object sender, KeyPressEventArgs e)
         {
-            CreateDraggableLabel(Color.Green);
-        }
-
-        private void LabelRed_Click(object sender, EventArgs e)
-        {
-            CreateDraggableLabel(Color.Red);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            CreateDraggableLabel(Color.Brown);
-        }
-
-        private void CreateDraggableLabel(Color backColor)
-        {
-            Label label = new Label
+            aux = sender as Button;
+            if (botonIzqPresionado)
             {
-                Location = new Point(13, 13),
-                AutoSize = false,
-                Size = new Size(90, 54),
-                BackColor = backColor
-            };
-            label.MouseDown += new MouseEventHandler(Label_MouseDown);
-            label.MouseMove += new MouseEventHandler(Label_MouseMove);
-            label.MouseUp += new MouseEventHandler(Label_MouseUp);
-            label.Click += new EventHandler(Label_Click);
-            labels.Add(label);
-            panel1.Controls.Add(label);
-        }
-
-        private void Label_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                draggedLabel = sender as Label;
-                dragStartPoint = e.Location;
-                draggedLabel.BringToFront();
-            }
-        }
-        private void Label_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (draggedLabel != null)
-            {
-                draggedLabel.Left += e.X - dragStartPoint.X;
-                draggedLabel.Top += e.Y - dragStartPoint.Y;
-            }
-        }
-        private void Label_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                if (draggedLabel != null && panel1.ClientRectangle.Contains(panel1.PointToClient(draggedLabel.Location)))
+                switch (e.KeyChar)
                 {
-                    panel1.Controls.Add(draggedLabel);
-                    draggedLabel.Location = panel1.PointToClient(draggedLabel.Location);
+                    case 'w':
+                        aux.Size = new Size(aux.Size.Width, aux.Size.Height + 1);
+                        break;
+                    case 's':
+                        aux.Size = new Size(aux.Size.Width, aux.Size.Height - 1);
+                        break;
+                    case 'a':
+                        aux.Size = new Size(aux.Size.Width - 1, aux.Size.Height);
+                        break;
+                    case 'd':
+                        aux.Size = new Size(aux.Size.Width + 1, aux.Size.Height);
+                        break;
                 }
-                draggedLabel = null;
+                aux = null;
             }
         }
 
-        private void Label_Click(object sender, EventArgs e){
-            bool booleano = ((Label) sender).Focus();
+        private void button_Click(object sender, EventArgs e)
+        {
+            aux = (sender as Button);
+            nuevoComponente = new Button
+            {
+                Location = new Point(20, 20),
+                AutoSize = false,
+                Size = aux.Size,
+                Name = aux.Name,
+                Text = aux.Text
+            };
+            nuevoComponente.MouseDown += new MouseEventHandler(button_MouseDown);
+            nuevoComponente.MouseUp += new MouseEventHandler(button_MouseUp);
+            nuevoComponente.KeyPress += new KeyPressEventHandler(button_KeyPress);
+            panel1.Controls.Add(nuevoComponente);
+            aux = null;
+        }
+
+        private void panel1_DragOver(object sender, DragEventArgs e)
+        {
+            //foreach (Button item in panel1.Controls)
+            //    if (item.Focused) aux = item;
+            //point = aux.PointToClient(new Point(e.X, e.Y));
+
         }
     }
 }
+/*
+    if (e.Button == MouseButtons.Right)
+    {
+        aux = sender as Button;
+        point = aux.PointToClient(new Point(e.X, e.Y));
+        MessageBox.Show($"X abs {e.X} Y abs {e.Y} \nX rel {point.X} Y rel {point.Y}");
+    }
+*/

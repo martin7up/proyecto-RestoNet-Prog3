@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\",
+  "WorkspaceRootPath": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|e:\\tup\\6) c\u00F3digo\\proyecto-restonet-prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|c:\\users\\pedro\\source\\repos\\borrador_restonet_prog3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|c:\\users\\pedro\\source\\repos\\borrador_restonet_prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:56:45.36Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowEoAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T13:47:51.896Z"
+              "WhenOpened": "2024-06-21T13:47:51.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T13:48:39.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\Tup\\5) Prog. III\\Resto App\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\5) Prog. III\\Resto App\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Pedro\\source\\repos\\borrador_RestoNet_Prog3\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T13:45:15.916Z"
+              "WhenOpened": "2024-06-21T13:45:15.916Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
