@@ -1,68 +1,85 @@
-
+﻿using System;
 using System.Drawing;
-using System.Drawing.Design;
+using System.Windows.Forms;
 
-namespace proyRestoNetProg3
+namespace Resto_App
 {
     public partial class Form1 : Form
     {
-        //private List<Point> _points;
-        //private Point point;
         public Form1()
         {
             InitializeComponent();
-            //_points = new();
-
         }
 
-        private void pictureBox_mouseDown(object sender, MouseEventArgs e)
+        private void LabelBlue_Click(object sender, EventArgs e)
         {
-            ((PictureBox)sender).DoDragDrop(((PictureBox)sender).Image, DragDropEffects.Copy);
+            CreateDraggableLabel(Color.MediumBlue);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LabelGreen_Click(object sender, EventArgs e)
         {
-            pictureBox1.AllowDrop = true;
+            CreateDraggableLabel(Color.Green);
         }
 
-        
-
-        private void pictureBox1_DragEnter(object sender, DragEventArgs e)
+        private void LabelRed_Click(object sender, EventArgs e)
         {
-            if (e.Data.GetDataPresent(DataFormats.Bitmap))
-                e.Effect = DragDropEffects.Copy;
+            CreateDraggableLabel(Color.Red);
         }
-        //Evento de prueba
-        private void pictureBox1_MouseClick_1(object sender, MouseEventArgs e)
+
+        private void label1_Click(object sender, EventArgs e)
         {
-            pictureBox1.CreateGraphics().DrawIcon(SystemIcons.WinLogo, e.X, e.Y);
-            //_points.Add(new(e.X, e.Y));
+            CreateDraggableLabel(Color.Brown);
         }
 
-        void pictureBox1_DragDrop(object sender, DragEventArgs e)
+        private void CreateDraggableLabel(Color backColor)
         {
-            pictureBox1.CreateGraphics().DrawImage((Image)e.Data.GetData(DataFormats.Bitmap), e.X-25, e.Y-25);
+            Label label = new Label
+            {
+                Location = new Point(13, 13),
+                AutoSize = false,
+                Size = new Size(90, 54),
+                BackColor = backColor
+            };
+            label.MouseDown += new MouseEventHandler(Label_MouseDown);
+            label.MouseMove += new MouseEventHandler(Label_MouseMove);
+            label.MouseUp += new MouseEventHandler(Label_MouseUp);
+            label.Click += new EventHandler(Label_Click);
+            labels.Add(label);
+            panel1.Controls.Add(label);
         }
 
-        //private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        //{
-        //    point = new(e.X, e.Y);
-        //}
+        private void Label_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                draggedLabel = sender as Label;
+                dragStartPoint = e.Location;
+                draggedLabel.BringToFront();
+            }
+        }
+        private void Label_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (draggedLabel != null)
+            {
+                draggedLabel.Left += e.X - dragStartPoint.X;
+                draggedLabel.Top += e.Y - dragStartPoint.Y;
+            }
+        }
+        private void Label_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (draggedLabel != null && panel1.ClientRectangle.Contains(panel1.PointToClient(draggedLabel.Location)))
+                {
+                    panel1.Controls.Add(draggedLabel);
+                    draggedLabel.Location = panel1.PointToClient(draggedLabel.Location);
+                }
+                draggedLabel = null;
+            }
+        }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    //PaintEventArgs a = e as PaintEventArgs; para usar con un codigo en paga de microsoft
-        //    using (Pen pen = new Pen(Color.Black))
-        //    {
-        //        foreach (Point item in _points)
-        //        {
-        //            Point aux = item;
-        //            foreach (Point meti in _points)
-        //            {
-        //                pictureBox1.CreateGraphics().DrawLine(pen, item, meti);
-        //            }
-        //        }
-        //    }
-        //}   
+        private void Label_Click(object sender, EventArgs e){
+            bool booleano = ((Label) sender).Focus();
+        }
     }
 }

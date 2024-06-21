@@ -1,0 +1,20 @@
+E:\Tup\5) Prog. III\Resto App\bin\Debug\Resto App.exe.config
+E:\Tup\5) Prog. III\Resto App\bin\Debug\Resto App.exe
+E:\Tup\5) Prog. III\Resto App\bin\Debug\Resto App.pdb
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto App.csproj.AssemblyReference.cache
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto_App.Form1.resources
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto_App.Properties.Resources.resources
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto App.csproj.GenerateResource.cache
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto App.csproj.CoreCompileInputs.cache
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto App.exe
+E:\Tup\5) Prog. III\Resto App\obj\Debug\Resto App.pdb
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\bin\Debug\Resto App.exe.config
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\bin\Debug\Resto App.exe
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\bin\Debug\Resto App.pdb
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.csproj.AssemblyReference.cache
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto_App.Form1.resources
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto_App.Properties.Resources.resources
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.csproj.GenerateResource.cache
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.csproj.CoreCompileInputs.cache
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.exe
+E:\Tup\6) Código\proyecto-RestoNet-Prog3\obj\Debug\Resto App.pdb

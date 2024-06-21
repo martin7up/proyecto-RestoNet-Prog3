@@ -1,16 +1,20 @@
-﻿namespace proyRestoNetProg3
+﻿using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Resto_App
 {
     partial class Form1
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,138 +24,91 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            panel1 = new Panel();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            panel2 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(665, 437);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.DragDrop += pictureBox1_DragDrop;
-            pictureBox1.DragEnter += pictureBox1_DragEnter;
-            pictureBox1.MouseClick += pictureBox1_MouseClick_1;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(93, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(84, 83);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.MouseDown += pictureBox_mouseDown;
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelBlue = new System.Windows.Forms.Label();
+            this.labelGreen = new System.Windows.Forms.Label();
+            this.labelRed = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox6);
-            panel1.Controls.Add(pictureBox7);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(681, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(180, 501);
-            panel1.TabIndex = 2;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Location = new System.Drawing.Point(13, 13);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(533, 270);
+            this.panel1.TabIndex = 0;
             // 
-            // pictureBox6
+            // labelBlue
             // 
-            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(3, 144);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(84, 99);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 8;
-            pictureBox6.TabStop = false;
-            pictureBox6.MouseDown += pictureBox_mouseDown;
+            this.labelBlue.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.labelBlue.Location = new System.Drawing.Point(553, 13);
+            this.labelBlue.Name = "labelBlue";
+            this.labelBlue.Size = new System.Drawing.Size(90, 54);
+            this.labelBlue.TabIndex = 1;
+            this.labelBlue.Click += new System.EventHandler(this.LabelBlue_Click);
             // 
-            // pictureBox7
+            // labelGreen
             // 
-            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(92, 92);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(84, 99);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            pictureBox7.MouseDown += pictureBox_mouseDown;
+            this.labelGreen.BackColor = System.Drawing.Color.Green;
+            this.labelGreen.Location = new System.Drawing.Point(659, 13);
+            this.labelGreen.Name = "labelGreen";
+            this.labelGreen.Size = new System.Drawing.Size(90, 54);
+            this.labelGreen.TabIndex = 2;
+            this.labelGreen.Click += new System.EventHandler(this.LabelGreen_Click);
             // 
-            // pictureBox3
+            // labelRed
             // 
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(3, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(83, 135);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
-            pictureBox3.MouseDown += pictureBox_mouseDown;
+            this.labelRed.BackColor = System.Drawing.Color.Red;
+            this.labelRed.Location = new System.Drawing.Point(552, 81);
+            this.labelRed.Name = "labelRed";
+            this.labelRed.Size = new System.Drawing.Size(90, 54);
+            this.labelRed.TabIndex = 3;
+            this.labelRed.Click += new System.EventHandler(this.LabelRed_Click);
             // 
-            // panel2
+            // label1
             // 
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(2, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(673, 504);
-            panel2.TabIndex = 3;
+            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Location = new System.Drawing.Point(659, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 54);
+            this.label1.TabIndex = 4;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(864, 515);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel2.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(771, 320);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelRed);
+            this.Controls.Add(this.labelGreen);
+            this.Controls.Add(this.labelBlue);
+            this.Controls.Add(this.panel1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Panel panel1;
-        private Panel panel2;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelBlue;
+        private System.Windows.Forms.Label labelGreen;
+        private System.Windows.Forms.Label labelRed;
+        private Point dragStartPoint;
+        private Label draggedLabel;
+        private List<Label> labels = new List<Label>();
+        private Label label1;
     }
 }
+

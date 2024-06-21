@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|e:\\tup\\6) c\u00F3digo\\proyecto-restonet-prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1B9563-0E70-4180-B688-8F4A54FC5CCE}|Resto App.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowEoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T13:47:51.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T13:48:39.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Tup\\6) C\u00F3digo\\proyecto-RestoNet-Prog3\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Tup\\5) Prog. III\\Resto App\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\5) Prog. III\\Resto App\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T13:45:15.916Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
