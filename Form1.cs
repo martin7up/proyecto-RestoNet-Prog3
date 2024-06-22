@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Diagnostics;
 namespace borrador_RestoNet_Prog3
 {
     public partial class Form1 : Form
@@ -14,13 +15,13 @@ namespace borrador_RestoNet_Prog3
         private void button_MouseDown(object sender, MouseEventArgs e)
         {
             botonIzqPresionado = true;
-            absPoint = e.Location;
-
+            relPoint = e.Location;
         }
         private void button_MouseUp(object sender, MouseEventArgs e)
         {
+            Point point = new Point(Cursor.Position.X- relPoint.X, Cursor.Position.Y-relPoint.Y);
+            (sender as Button).Location = panel1.PointToClient(point);
             botonIzqPresionado = false;
-            (sender as Button).Location = panel1.PointToClient(Cursor.Position);
         }
 
         private void button_KeyPress(object sender, KeyPressEventArgs e)
